@@ -1,0 +1,42 @@
+<div class="form-container dialog-container">
+
+  <div class="dialog-container">
+    <div class="dialog-header theme-layout">
+      <div class="dialog-header-text" mat-dialog-title>
+        Create Entry
+      </div>
+      <div class="dialog-close">
+        <mat-icon mat-dialog-close class="close-icon">close</mat-icon>
+      </div>
+    </div>
+
+  <!-- Double column form -->
+  <mat-dialog-content *ngIf="data?.doubleColumn" class="double-col">
+    <form [formGroup]="formData">
+      <mat-form-field class="full-width" *ngFor="let fdata of data?.fieldName | keyvalue: keepOrder; let i = index">
+        <mat-label>{{fdata.key}}</mat-label>
+        <input matInput formControlName={{fdata.key}} name=''/>
+        <mat-error *ngIf="formData?.controls?.[''+fdata.key]?.errors?.['required']">
+          This field is Required !
+        </mat-error>
+      </mat-form-field>
+    </form>
+  </mat-dialog-content>
+
+  <div class="dialog-footer">
+    <mat-dialog-actions align="end">
+      <button mat-raised-button color="warning" mat-dialog-close>
+        {{ data?.nText || "Cancel" }}
+      </button>
+      <button
+        mat-raised-button
+        color="primary"
+        [mat-dialog-close]="true"
+        cdkFocusInitial
+        (click)="dialogSubmit()"
+      >
+        {{ data?.pText || "Ok" }}
+      </button>
+    </mat-dialog-actions>
+  </div>
+</div>

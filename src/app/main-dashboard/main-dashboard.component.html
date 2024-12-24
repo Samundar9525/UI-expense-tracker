@@ -1,0 +1,20 @@
+
+<!-- <div class="month-year-selector">
+  <div class="month-name">{{currentdate}}</div>
+  <mat-form-field class="no-border" appearance="fill">
+    <input matInput [matDatepicker]="monthYearPicker">
+    <mat-datepicker #monthYearPicker startView="multi-year" (monthSelected)="onMonthSelected($event, monthYearPicker)" panelClass="month-year-picker" [startAt]="defaultDate"></mat-datepicker>
+    <mat-datepicker-toggle matSuffix [for]="monthYearPicker"></mat-datepicker-toggle>
+  </mat-form-field>
+</div>
+
+
+<div class="button-container">
+  <button mat-fab color="primary" class="floating-button" (click)="openDataInputDialog()">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
+
+
+<app-summary-table *ngIf="dataSource" [data]="dataSource"></app-summary-table> -->
+<app-agg-month-cards></app-agg-month-cards>

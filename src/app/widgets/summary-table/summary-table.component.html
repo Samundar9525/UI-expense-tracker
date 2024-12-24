@@ -1,0 +1,38 @@
+<ng-container *ngIf="data.details && data?.details.length>0;else Nodata">
+  <div class="table-container">
+    <div class="table1" >
+      <table mat-table class="mat-elevation-z8" [dataSource]="data?.details">
+        <ng-container *ngFor="let rowData of data.columnDetails">
+          <ng-container  matColumnDef={{rowData}}>
+            <th mat-header-cell *matHeaderCellDef>{{rowData  | titlecase }} </th>
+            <td mat-cell *matCellDef="let element"> {{element[rowData]}} </td>
+          </ng-container>
+        </ng-container>
+      <tr class="header-row" mat-header-row *matHeaderRowDef="data.columnDetails; sticky: true"></tr>
+      <tr mat-row *matRowDef="let row; columns: data.columnDetails;"></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Summary Section -->
+  <div class="summary-container">
+    <div class="summary-item">
+      <span>Total Invested Amount:</span>
+      <strong>{{ totalInvested }}</strong>
+    </div>
+    <div class="summary-item">
+      <span>Total Profit Amount:</span>
+      <strong>{{ totalProfit}}</strong>
+    </div>
+    <div class="summary-item">
+      <span>Total Loss Amount:</span>
+      <strong>{{ totalLoss}}</strong>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #Nodata >
+  <div class="no-data">
+    No Data....
+  </div>
+</ng-template>

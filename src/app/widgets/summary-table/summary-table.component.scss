@@ -1,0 +1,50 @@
+.table-container {
+  padding: 5px;
+  .title {
+    font-size: 31px;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  table {
+    width: 100%;
+  }
+  .table1 {
+    margin: 10px 2px;
+    min-height: 70vh;
+    max-height: 70vh;
+    overflow: auto;
+  }
+  .header-row {
+    background-color: #ffcd11 !important;
+  }
+  .search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -20px;
+    mat-form-field{
+      width: 40%;
+    }
+  }
+}
+
+.summary-container {
+  margin-top: 20px;
+  padding: 30px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.summary-item {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.summary-item span {
+  margin-right: 5px;
+}

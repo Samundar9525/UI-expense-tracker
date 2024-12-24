@@ -1,0 +1,45 @@
+<div class="month-cards-container">
+  <div class="month-card" *ngFor="let month of months">
+    <mat-card class="month-card-inner">
+      <mat-card-header class="month-card-header">
+        <mat-card-title>{{ month.name }}</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content class="card-content">
+        <div class="left-section">
+          <div class="details">
+            <div>
+              <strong>Total Expense:</strong>
+              <span>{{ month.totalExpense }}</span>
+            </div>
+            <div>
+              <strong>Profit:</strong>
+              <span>{{ month.profit }} ({{ month.profitPercentage }}%)</span>
+            </div>
+            <div>
+              <strong>Loss:</strong>
+              <span>{{ month.loss }} ({{ month.lossPercentage }}%)</span>
+            </div>
+            <div>
+              <strong>Trade Count:</strong>
+              <span>{{ month.totalTradeCount }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-section">
+          <apx-chart
+            [series]="[month.profit, month.loss, month.totalExpense - month.profit - month.loss]"
+            [chart]="chartOptions.chart"
+            [labels]="chartOptions.labels"
+            [colors]="chartOptions.colors"
+            [responsive]="chartOptions.responsive"
+            [legend]="chartOptions.legend"
+            [markers]="chartOptions.markers"
+            [dataLabels]="chartOptions.dataLabels"
+          ></apx-chart>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

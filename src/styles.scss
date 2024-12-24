@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.form-body{
+  height: auto;
+}
+.wd20 {
+  width: 20%;
+}
+.wd30 {
+  width: 30%;
+}
+.wd40 {
+  width: 40%;
+}
+.wd50 {
+  width: 50%;
+}
+.wd60{
+  width: 60%;
+}
+.wd70{
+  width: 70%;
+}
+.wd80{
+  width: 80%;
+}
+
+.wd100{
+  width: 100%;
+}
+.ht80 {
+  height: 80%;
+}
+.ht50 {
+  height: 50%;
+}
+.ht30 {
+  height: 30%;
+}
+.ht40 {
+  height: 40%;
+}
+.ht60 {
+  height: 60%;
+}
+.ht70 {
+  height: 70%;
+}
+.ht80 {
+  height: 80%;
+}
+.pdl20{
+  padding-left: 20px;
+}
+.pdr20{
+  padding-right: 20px;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cdk-global-scrollblock {
+  overflow-y: auto;
+}
+.title {
+  font-size: 31px;
+  font-weight: 500;
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 4px; /* Set the width of the vertical scrollbar */
+  height: 3px; /* Set the height of the horizontal scrollbar */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey background for the track */
+  border-radius: 8px; /* Rounded corners for the track */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Dark grey for the thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Scrollbar thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Slightly darker grey on hover */
+}
+
+/* For Firefox (if needed) */
+.scroll-container {
+  scrollbar-width: thin; /* Make scrollbar thinner */
+  scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+}
+
+.mat-mdc-text-field-wrapper.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: transparent !important;
+  padding: 0px;
+}
+
+.no-data{
+    background-color: #ffcd11 !important;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
