@@ -1,27 +1,9 @@
-# ExpenseTracker
+## Stock Expense Tracker
+## 1. Entry Creator
+<img width="1919" height="873" alt="{85E957D0-84EE-44ED-9017-0BFE827A79D4}" src="https://github.com/user-attachments/assets/bc9528f4-9d23-4461-b119-9c695b4ef963" />
+## 2 Mothly view 
+<img width="1932" height="873" alt="{5706FDD7-1091-48C8-9CD0-C0978A6E48E7}" src="https://github.com/user-attachments/assets/5023574d-23f4-4958-8495-abd7f5a64b00" />
+## 3.Yearly Expense view 
+<img width="1932" height="869" alt="{A8E4CAD5-85AC-4F36-8EF3-D6229473F808}" src="https://github.com/user-attachments/assets/1f997623-f25f-4b99-8baf-e578fa71c227" />
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
